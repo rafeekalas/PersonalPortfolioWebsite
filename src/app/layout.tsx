@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono, Syne } from "next/font/google";
 import { Header } from "@/components/Header";
+import { CareerChat } from "@/components/CareerChat";
 import "./globals.css";
 
 const syne = Syne({
@@ -48,6 +49,7 @@ export default function RootLayout({
         <div className="grain" aria-hidden />
         <Header />
         <main>{children}</main>
+        <CareerChat />
       </body>
     </html>
   );
